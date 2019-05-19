@@ -1,1 +1,15 @@
-<h1> Hello World! </h1>
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello World!</h1>
+    <a href="/lists/new">new list</a>
+    {% for list in lists %}
+        <div style="border: 1px solid grey;">
+        <a href="/lists/{{ list.id }}">더보기</a>
+        <a href="/lists/{{ list.id }}/edit">수정하기</a>
+        <a href="/lists/{{ list.id }}/delete">삭제</a>
+        <p>{{ list.title }}</p>
+        <p>{{ list.content }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
