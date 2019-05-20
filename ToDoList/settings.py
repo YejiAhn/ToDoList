@@ -25,7 +25,7 @@ SECRET_KEY = '_4gpu3fa+t_n1_p%&4cia=ek^6t1v+_6ur&r!0cetpfg6+nj(x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
