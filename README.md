@@ -24,17 +24,17 @@ Homebrew를 설치하기 위해서는 Xcode에 포함된 Command Line Tools(개�
 그러면 다른 창이 나타날 것입니다. 아래에서 괄호를 제외한 부분을 입력해 주세요.
 
 (i를 누른다.)
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-(esc를 누른다.)
-:wq
-(enter를 누른다.)
-다시 원래 보던 터미널이 나타날 것입니다. 위의 과정은 터미널에게 pyenv 명령을 알아듣도록 만든 것입니다. 마지막으로 터미널을 다시 load하는 과정이 필요하니 아래 명령을 입력하세요.
+</br> if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+</br> if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+</br> (esc를 누른다.)
+</br> :wq
+</br> (enter를 누른다.)
+</br> 다시 원래 보던 터미널이 나타날 것입니다. 위의 과정은 터미널에게 pyenv 명령을 알아듣도록 만든 것입니다. 마지막으로 터미널을 다시 load하는 과정이 필요하니 아래 명령을 입력하세요.
 
 $ source ~/.bash_profile
 
  파이썬을 설치해 줍니다.
-$ pyenv install 3.6.8
+</br> $ pyenv install 3.6.8
 
 이제 Django를 설치해 봅시다.
-$ pip install django
+</br>$ pip install django
