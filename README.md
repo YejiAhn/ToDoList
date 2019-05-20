@@ -3,7 +3,7 @@
 Individual project for Programmers 2019 Summer Coding
 
 
-기능
+# 기능
 - 새로운 TODO(제목과 내용) 작성
 - ToDO 목록 조회
 - TODO 항목의 제목과 내용을 수정
@@ -13,7 +13,7 @@ Individual project for Programmers 2019 Summer Coding
 - 마감기한이 지난 TODO에 대해 알림 노출
 
 
-설치 및 빌드 방법
+# 설치 및 빌드 방법
 
 Homebrew를 설치하기 위해서는 Xcode에 포함된 Command Line Tools(개발자용 명령어 라인 도구)가 필요합니다.
 </br> $ xcode-select --install # 
