@@ -11,7 +11,13 @@ def index(request):
     elif request.method == 'POST':
         title = request.POST['title']
         content = request.POST['content']
-        List.objects.create(title=title, content=content)
+        due_date = request.POST.get('due_date',None)
+        degree = request.POST['degree']
+        completed = request.POST.get('completed',False)
+        if (due_date!=None) :
+            List.objects.create(title=title, content=content, due_date=due_date, degree=degree, completed=completed)
+        else :
+            List.objects.create(title=title, content=content, degree=degree, completed=completed)
         return redirect('/lists')
 
 
@@ -26,8 +32,14 @@ def show(request, id):
         list = List.objects.get(id=id)
         title = request.POST['title']
         content = request.POST['content']
+        due_date = request.POST.get('due_date','')
+        degree = request.POST['degree']
+        completed = request.POST.get('completed',False)
         list.title = title
         list.content = content
+        list.due_date = due_date
+        list.degree = degree
+        list.completed = completed
         list.save()
         return redirect('/lists')
     

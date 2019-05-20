@@ -8,6 +8,12 @@
     <input name="title" /> <br />
     <p>content</p>
     <input name="content" /> <br />
+    <p>due date</p>
+    <input type="date" name="due_date"/> <br />
+    <p>Urgency (1:Very Urgent/ 2:Intermediate/ 3:Not Urgent)</p>
+    <input type="range" name="degree" min="1" max="3" value="2" tabindex="0"/>
+    <p>Completed
+    <input type="checkbox" name="completed" id="ChkBox" value="False" onclick="gogogo()"/> </p>
     <input type="submit" value="submit" />
 </form>
 {% endblock content %}
