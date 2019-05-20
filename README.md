@@ -16,9 +16,8 @@ Individual project for Programmers 2019 Summer Coding
 # 설치 및 빌드 방법
 
 Homebrew를 설치하기 위해서는 Xcode에 포함된 Command Line Tools(개발자용 명령어 라인 도구)가 필요합니다.
-</br> $ xcode-select --install # 
+</br> $ xcode-select --install 
 </br> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-설치
 </br> $ brew install pyenv
 
 그러면 다른 창이 나타날 것입니다. 아래에서 괄호를 제외한 부분을 입력해 주세요.
